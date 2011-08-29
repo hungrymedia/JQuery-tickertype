@@ -1,0 +1,51 @@
+body{
+	font-size: medium;
+	font-family: Verdana,Arial,sans-serif;
+	
+}
+h1, h2, h3{
+	font-weight: bold;
+	color: #666;
+	clear: left;
+}
+h2{
+  border-bottom: 1px solid #CCC;
+	font-style: italic;
+	margin: 2em 0 0.5em 0;
+}
+a{
+  color: #090;
+	text-decoration: none;
+}
+a:hover{
+  color: #0A0;
+	text-decoration: underline;
+}
+#ticker-area{
+	background: #EEE;
+  border: 4px solid #060;
+	border-left: none;
+	border-right: none;
+	padding: 10px 0;
+	margin: 20px 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #060;
+}
+.codeblock{
+ background: #EEE;
+ color: #030;
+ line-height: 1.3em;
+ padding: 1em;
+ border: 1px solid #CCC
+}
+.code{
+ font-family: "Courier New", Courier, monospace;
+}
+.highlight{
+	font-weight: bold;
+}
+.littlelink{
+  float: right;
+	font-size: small;
+}
