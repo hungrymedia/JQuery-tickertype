@@ -11,7 +11,7 @@
 <a class="littlelink" href="#download">Jump to download</a>
 <h1>jQuery TickerType Plugin Demo</h1>
 <h2>Example</h2>
-<div id="ticker-area">
+<div id="ticker-area" alt="2">
   <ul>
   	<li>Sed venenatis <a href="http://www.google.com">diam quis</a> lorem. Curabitur.</li>
     <li>Fusce <strong>vehicula</strong> iaculis felis. Phasellus congue!</li>
@@ -40,6 +40,16 @@
 &nbsp;&nbsp;&lt;/ul&gt;<br />
 &lt;/div&gt;<br />
 </div>
+<p>The code above will rotate through the 3 items endlessly. If you would like the ticker to stop animating after a number of cycles, simple at <span class="code">alt="2"</span> to the ticker-area div tag, substituting the number of cycles you would like before animation stops. After the animation stops, the last item in the set will remain on he screen. For example:</p>
+<div class="codeblock code">&lt;div id=&quot;ticker-area&quot; <span class="highlight">alt=&quot;10&quot;</span>&gt;<br />
+&nbsp;&nbsp;&lt;ul&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Sed venenatis &lt;a href=&quot;http://www.google.com&quot;&gt;diam quis&lt;/a&gt; lorem. Curabitur.&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Fusce &lt;strong&gt;vehicula&lt;/strong&gt; iaculis felis. Phasellus congue!&lt;/li&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Morbi vitae enim vel &lt;em&gt;purus sollicitudin&lt;/em&gt;.&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;/ul&gt;<br />
+&lt;/div&gt;<br />
+</div>
+<p>The code above will rotate through the 3 items 10 times and then stop on the last item.</p>
 <a name="download"></a><h2>Download</h2>
 <a href="jQuery.TickerType.zip">jquery.ticker.zip</a> (<em>includes this demo page and CSS, jquery.tickertype.js and jquery-1.2.6.min.js</em>)
 <h2>License</h2>

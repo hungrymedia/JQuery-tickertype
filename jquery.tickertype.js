@@ -1,4 +1,6 @@
 // when the DOM is ready...
+var tickerIterations = 0;
+var currentTickerIteration = 0;
 $(document).ready(function () {
   // load the ticker
 	createTicker();
@@ -6,6 +8,9 @@ $(document).ready(function () {
 }); 
 
 function createTicker(){
+	if (typeof $('#ticker-area').attr('alt') != 'undefined'){
+		tickerIterations = $('#ticker-area').attr('alt');
+	}
 	// put all list elements within #ticker-area into array
 	var tickerLIs = $("#ticker-area ul").children();
 	tickerItems = new Array();
@@ -19,6 +24,15 @@ function createTicker(){
 function rotateTicker(){
 	if( i == tickerItems.length ){
 	  i = 0;
+		if( tickerIterations > 0 ){
+			console.log( "tickerIterations: " +tickerIterations );
+			currentTickerIteration++;
+			console.log( "currentTickerIteration: " + currentTickerIteration );
+			if( currentTickerIteration >= tickerIterations ){
+				console.log( "Done iterating" );
+				return false;
+			}
+		}
 	}
   tickerText = tickerItems[i];
 	c = 0;
